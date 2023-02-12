@@ -12,11 +12,18 @@ Gelila Tefera ------ UGR/9453/13
 Rediet Haileab ------ UGR/9422/13
 
 We created a REST API accordingly for two features that are buying and renting events/pages. We added GET operation for the customer user to access these API resources. And for the admin, he/she can create, delete, update and also see resources. From this, it can be analyzed that our project has full CRUD (Create, Read, Update and Delete) capabilities.
-The interface for the customer user and the admin is different after they signed in. Firstly, the customer user can sign up. After signing up correctly, the system leads him directly to buy page so he can show the houses that are listed there. But, for the admin case different scenario is applied. The admin has his own password and he can only access that admin page. After completing the sign in process correctly, he can directly access the admin page. Then there, he can show all he houses listed. And if he wants, he can update, delete, and add new houses. In our project, best RESTful API practices are used and correctly analyzed. We have also modularized our REST API. We used separate module for the two features. Our application also has JWT Token based Authentication. 
+
+The interface for the customer user and the admin is different after they signed in. Firstly, the customer user can sign up. After signing up correctly, the system leads him directly to buy page so he can show the houses that are listed there. But, for the admin case different scenario is applied. The admin has his own password and he can only access that admin page. 
+
+After completing the sign in process correctly, he can directly access the admin page. Then there, he can show all he houses listed. And if he wants, he can update, delete, and add new houses. In our project, best RESTful API practices are used and correctly analyzed. We have also modularized our REST API. We used separate module for the two features. Our application also has JWT Token based Authentication. 
+
 We chose MongoDB as a database technology for our application. We have a number of reasons for choosing MongoDB. These are:  
 1.	Scalability: MongoDB is designed to scale easily, both vertically and horizontally. This means that it can handle large amounts of data and high levels of traffic without performance issues for our application.
+
 2.	Flexibility: MongoDB is a document-based NoSQL database, which means it is very flexible in terms of data modeling. This can be especially useful in a real estate website project where we may need to store and retrieve various types of data such as property listings, images, and user information.
+
 3.	Integration: NestJS has built-in support for MongoDB through its official module, making it easy to integrate MongoDB into our project.
+
 4.	Overall, we chose MongoDB for our real estate website project with NestJS due to its scalability, flexibility, performance, integration, and community support.
 
 
