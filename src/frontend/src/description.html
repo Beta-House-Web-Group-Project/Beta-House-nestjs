@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.css">     
+        <link rel="stylesheet" href="style.css">
+        <title>Beta House </title>
+    </head>
+    <body onload="getID()">
+
+                        <header>
+                          <header>
+                            <nav class="navbar navbar-expand-lg py-3 navbar-dark text-decoration-none bg-primary shadow-sm">
+                                <div class="container">
+                                  <a href="#" class="navbar-brand">
+                           
+                                    <img src="images/beta.png" width="100" style="border-radius:30%;"  alt="logo" class="d-inline-block align-middle mr-2">
+                              
+                                    <span class="text-uppercase font-weight-bold"></span>
+                                  </a>
+                               
+                      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-dark"><span class="navbar-toggler-icon"></span></button>
+                  
+                      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ps-5 ms-4 d-flex gap-4 ">
+                          <li class="nav-item active"><a href="index.html" class="nav-link text-white lead fs-4">HOME </a></li>
+                          <li class="nav-item"><a href="buy.html" class="nav-link lead text-white  fs-4">BUY</a></li>
+                          <li class="nav-item"><a href="rent.html" class="nav-link lead text-white fs-4">RENT</a></li>
+                          <li class="nav-item"><a href="agents.html" class="nav-link lead text-white fs-4">AGENTS</a></li>
+                          <li class="nav-item"><a href="about.html" class="nav-link lead text-white fs-4">ABOUT</a></li>
+                          <li class="nav-item"><a href="contact.html" class="nav-link lead text-white fs-4">CONTACT</a></li>
+                          <li class="nav-item"><a href="login.html" class="nav-link lead text-white fs-4">LOGIN/REGISTER</a></li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+              </header>
+           
+ <main>
+
+                                    
+ <div class="details-section__title ps-5 mt-4">G + 2</div>
+ <P class=" ps-5">For sale</P>
+<div class=" description ps-5 d-flex ">
+  
+    <div class="row m-0 w-100 ">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img
+          id="img1"
+          src="images/luxurious.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Boat on Calm Water"
+        />
+
+        <img
+          id="img2"
+          src="images/interior1.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Wintry Mountain Landscape"
+        />
+
+        <img 
+          id="img3"
+          src="images/interior3.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Wintry Mountain Landscape"
+        />
+      </div>
+
+      <div class="col-lg-4 mb-lg-0">
+        <img
+          id="img4"
+          src="images/interior2.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Mountains in the Clouds"
+        />
+
+        <video
+          id="video1"
+          src="videos/apartment.mp4"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Boat on Calm Water"
+        ></video>
+      </div>
+    </div>
+
+
+
+<div class="right-details container me-4 w-50">
+  <h2 >Featured property lists</h2>
+  <ul class=" ps-3 list-group list-group-light list-group-small">
+    <li class="list-group-item">4 bedrooms</li>
+    <li class="list-group-item">2 Salons</li>
+    <li class="list-group-item">3 Bathrooms</li>
+    <li class="list-group-item">car parking area</li>
+    
+  </ul>
+  <h2 class="pt-3 mt-4 pb-1" >Contact</h2>
+  <h4  class="mb-4 pb-4"  >259120520751</h4>
+  <!-- Bootstrap 5 starter form -->
+  <form class="contact-form" id="contactForm">
+
+    <!-- Name input -->
+    <div class="mb-3">
+      <label class="form-label" for="name"></label>
+      <input class="py-3 form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+      <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+    </div>
+
+    <!-- Email address input -->
+    <div class="mb-3">
+      <label class="form-label" for="email"></label>
+      <input class="py-3 form-control" id="email" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+      <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+      <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="phone-number"></label>
+      <input class="py-3 form-control" id="phone-number" type="text" placeholder="Phone number" data-sb-validations="required" />
+      <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+    </div>
+
+    <!-- Message input -->
+    <div class="mb-3 ">
+      <label class="form-label" for="message"></label>
+      <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+      <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+    </div>
+
+    <!-- Form submissions success message -->
+    <div class="d-none" id="submitSuccessMessage">
+      <div class="text-center mb-3">Form submission successful!</div>
+    </div>
+
+    <!-- Form submissions error message -->
+    <div class="d-none" id="submitErrorMessage">
+      <div class="text-center text-danger mb-3">Error sending message!</div>
+    </div>
+
+    <!-- Form submit button -->
+    <div class="d-grid w-75 ps-5  align-items-center">
+      <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+    </div>
+
+  </form>
+
+</div>
+
+
+</div>
+
+<section>
+  <h2 class="ps-5 mt-4">Property list features</h2>
+  <ul class=" ps-5 list-group list-group-light list-group-small">
+    <li class="list-group-item">4 bedrooms</li>
+    <li class="list-group-item">2 Salons</li>
+    <li class="list-group-item">3 Bathrooms</li>
+    <li class="list-group-item">car parking area</li>
+    <li class="list-group-item">small garden</li>
+  </ul>
+
+  <div class="container ps-2 py-5 my-5">
+    <img class="img-fluid" src="images/location.png" alt="">
+  </div>
+</section>
+<!-- Gallery -->
+                        </main>
+
+                          <section>
+
+                            <footer class="my-3 bg-dark text-center text-white">
+                                <!-- Grid container -->
+                                <div>
+                                    <nav class="navbar navbar-expand-lg text-white">
+                                        <!-- Container wrapper -->
+                                        <div class="container-fluid">
+                                         
+                                         
+                                         
+                                          <div
+                                            class=" navbar-collapse justify-content-center"
+                                            id="navbarCenteredExample"  >
+                                            <!-- Left links -->
+                                            <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+                                              <li class="nav-item">
+                                                <a class="nav-link active text-white lead" aria-current="page" href="#">About us</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                <a class="nav-link text-white lead" href="agents.html">Agents</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                <a class="nav-link active text-white lead" aria-current="page" href="contact.html">Contact us</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                <a class="nav-link text-white lead" href="index.html"> <img src="images/beta.png" width="100" style="border-radius:40%;"  alt="logo" class="d-inline-block align-middle mr-2"></a>
+                                              </li>
+                                              <li class="nav-item">
+                                                <a class="nav-link active text-white lead" aria-current="page" href="buy.html">Buy</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                <a class="nav-link text-white lead" href="rent.html">Rent</a>
+                                              </li><li class="nav-item">
+                                                <a class="nav-link active text-white lead" aria-current="page" href="contact.html">Feedback</a>
+                                              </li>
+                                             
+                                          </div>
+                                        </div>     
+                                      </nav>
+                                </div>
+                                <hr>
+                                <div class="container p-4 pb-0">
+                                  <!-- Section: Social media -->
+                                  <section class="mb-4">
+                                 
+                                    <a class="btn  btn-floating m-1" href="https://www.facebook.com/betahouses1" role="button"
+                                      ><img src="images/facebook.png" width="50"  alt="logo" class="d-inline-block align-middle mr-2"></a>
+                              
+                                    <a class="btn  btn-floating m-1" href="https://www.facebook.com/betahouses1" role="button"
+                                      ><img src="images/twitter.png" width="50"  alt="logo" class="d-inline-block align-middle mr-2">
+                                    </a>
+                             
+                                    <a class="btn btn-floating m-1" href="https://www.facebook.com/betahouses1" role="button"
+                                      ><img src="images/whatsapp.png" width="50"   alt="logo" class="d-inline-block align-middle mr-2">
+                                    </a>
+                              
+                               
+                                    <a class="btn btn-floating m-1" href="https://www.facebook.com/betahouses1" role="button"
+                                      ><img src="images/telegram.png" width="50"   alt="logo" class="d-inline-block align-middle mr-2">
+                                    </a>
+                              
+                                  
+                                    <a class="btn btn-floating m-1" href="https://www.facebook.com/betahouses1" role="button"
+                                      ><img src="images/instagram.png" width="50"   alt="logo" class="d-inline-block align-middle mr-2">
+                                    </a>
+                              
+                                   
+                                  </section>
+                                  <!-- Section: Social media -->
+                                </div>
+                                <!-- Grid container -->
+                              
+                                <!-- Copyright -->
+                                <div class="text-center p-2 bg-dark" >
+                                    <p class="pt-3 text-white text-center"> &#169 2010 - 2023 BETA all rights preserved </p>
+                                </div>
+                                <!-- Copyright -->
+                              </footer>
+                  
+                          </section>
+                  <script src="script.js"></script>
+                  <script src="bootstrap.js"></script>
+                  <script src="description.js"></script>
+                  </body>
+                  </html>
+                  
+                  
+                  
+                  
+                  
+                  
+                  

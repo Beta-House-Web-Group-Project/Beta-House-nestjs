@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Manage House</title>
+</head>
+<body>
+
+<div >
+    <table  class=" py-3 table ">
+        <thead class=" text-white thead bg-primary">
+          <tr >
+           
+            <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Bathroom</th>
+                <th scope="col">Salon</th>
+                <th scope="col">Bedroom</th>
+                <th scope="col">Image</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody  id="body">
+        </tbody>        
+        
+    </table>
+    <h1  class="px-5 text-secondary" >Add a new home</h1>
+        <form class=" p-5 form " id="testForm">
+          <input class="name p-2 mb-3" type="text" name="name" placeholder="Name"><br>
+          <input class="price p-2 mb-3" type="text" name="price" placeholder="Price"><br>
+          <input class="bedroom p-2 mb-3" type="text" name="bedroom" placeholder="Bedrooms"><br>
+          <input class="salon p-2 mb-3" type="text" name="salon" placeholder="Salon"><br>
+          <input class="bathroom p-2 mb-3" type="text" name="bathroom" placeholder="Bathroom"><br>
+          <input class="file p-2 mb-3" type="file" name="file" placeholder="Image"><br>
+         
+          <div class="  d-flex w-25 px-5   ">
+            <button class="btn btn-primary btn-lg" type="submit">Add a new house</button>
+          </div>
+      
+        </form>
+      </div>
+
+        </div>
+        
+
+   
+
+
+    
+</body>
+
+<script src="admin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>
